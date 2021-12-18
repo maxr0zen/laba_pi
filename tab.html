@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 120px;
+      }
+      form {
+        width: 300px;
+        border-radius: 7px;
+      }
+      .block {
+        margin-left: 40%;
+      }
+      .hui {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        left: 50%;
+        display: none;
+        margin: auto;
+      }
+    </style>
+    <title>Таблица</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table class="table" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr class="table-head">
+          <th>ФИО</th>
+          <th>Группа</th>
+          <th>Телефон</th>
+          <th>Редактирование</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--        <tr>-->
+        <!--          <td class="name">Чистяков Максим Владимирович</td>-->
+        <!--          <td class="phone">ЦПИ-11</td>-->
+        <!--          <td class="group">89997856338</td>-->
+        <!--          <th><a class="delete-btn" href="№">Удалить</a><a class="change-btn" href="#">Изменить</a></th>-->
+        <!--        </tr>-->
+        <!--        <tr>-->
+        <!--          <td class="name">Захаров Семен Евгеньевич</td>-->
+        <!--          <td class="phone">ЦПИ-11</td>-->
+        <!--          <td class="group">89997856338</td>-->
+        <!--          <th><a class="delete-btn" href="№">Удалить</a><a class="change-btn" href="#">Изменить</a></th>-->
+        <!--        </tr>-->
+        <!--        <tr>-->
+        <!--          <td class="name">Бобровский Никита Анатольевич</td>-->
+        <!--          <td class="group">ЦПИ-11</td>-->
+        <!--          <td class="phone">89997856738</td>-->
+        <!--          <th><a class="delete-btn" href="№">Удалить</a><a class="change-btn" href="#">Изменить</a></th>-->
+        <!--        </tr>-->
+
+        <!--        <tr>-->
+        <!--          <td class="name">Фомин Игорь Анатольевич</td>-->
+        <!--          <td class="phone">ЦПИ-11</td>-->
+        <!--          <td class="group">89997812438</td>-->
+        <!--          <th><a class="delete-btn" href="№">Удалить</a><a class="change-btn" href="#">Изменить</a></th>-->
+        <!--        </tr>-->
+        <!--        <tr>-->
+        <!--          <td class="name">Гаричев Александр Семенович</td>-->
+        <!--          <td class="group">ЦПИ-11</td>-->
+        <!--          <td class="phone">89997894338</td>-->
+        <!--          <th><a class="delete-btn" href="№">Удалить</a><a class="change-btn" href="#">Изменить</a></th>-->
+        <!--        </tr>-->
+      </tbody>
+
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <th><a href="add.html" class="add-button">Добавить</a></th>
+        </tr>
+      </tfoot>
+    </table>
+    <!--    <script>-->
+    <!--      var tds = document.querySelectorAll("td");-->
+
+    <!--      for (var i = 0; i < tds.length; i++) {-->
+    <!--        tds[i].addEventListener("click", function func() {-->
+    <!--          var input = document.createElement("input");-->
+    <!--          this.innerHTML = "";-->
+    <!--          this.appendChild(input);-->
+
+    <!--          var td = this;-->
+    <!--          input.addEventListener("blur", function () {-->
+    <!--            td.innerHTML = this.value;-->
+    <!--            td.addEventListener("click", func);-->
+    <!--          });-->
+    <!--          this.removeEventListener("click", func);-->
+    <!--        });-->
+    <!--      }-->
+    <!--    </script>-->
+    <form class="hui" action="">
+      <fieldset style="background: #e1eff2">
+        <span class="close"></span>
+        <label style="padding: 15px 0; font-size: 20px; display: block; margin-left: 20%; width: 100%"
+          >Добавить в список:</label
+        >
+        <div><label>ФИО:</label><input class="name" type="text" /></div>
+        <div><label>Группа:</label><input class="group" type="text" /></div>
+        <div><label>Телефон:</label><input class="phone" type="number" /></div>
+        <input type="button" value="Добавить" class="add-form-btn" />
+      </fieldset>
+    </form>
+    <form class="change-form" action="">
+      <fieldset style="background: #e1eff2">
+        <span class="close"></span>
+        <label style="padding: 15px 0; font-size: 20px; display: block; margin-left: 20%; width: 100%"
+          >Добавить в список:</label
+        >
+        <div><label>ФИО:</label><input class="name" type="text" /></div>
+        <div><label>Группа:</label><input class="group" type="text" /></div>
+        <div><label>Телефон:</label><input class="phone" type="number" /></div>
+        <input type="button" value="Изменить" class="sbm-chng-btn" />
+      </fieldset>
+    </form>
+    <form class="piska">
+      <fieldset style="background: #e1eff2">
+        <span class="close"></span>
+        <label style="padding: 15px 0; font-size: 20px; display: block; margin-left: 30%">Вы уверены?</label>
+        <input type="button" value="Да" class="yes-btn block" />
+      </fieldset>
+    </form>
+    <script src="DAI.js"></script>
+  </body>
+</html>
